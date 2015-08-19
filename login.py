@@ -157,10 +157,8 @@ def getScore(username, name, session_id, ddlXN, ddlXQ):
 
 if __name__ == '__main__':
     cookie = setCookie()
-    # username = raw_input('请输入你的用户名：')
-    # password = raw_input('请输入你的密码：')
-    username = '03123034'
-    password = 'liang123'
+    username = raw_input('请输入你的用户名：')
+    password = raw_input('请输入你的密码：')
     result = login(username, password, cookie)
     name = result['name']
     print name
